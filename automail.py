@@ -6,24 +6,18 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
-sender_email = 'yingxi.li00@gmail.com'
+sender_email = None # replace w/ sender email
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
-# sender_password = "Lyx65666112&"
-sender_password = "rovgagwmnkcnkloc"
-# receiver_email = "yl877@cornell.edu"
-receiver_email = "2537665116@qq.com"
-# receiver_email = "litongwei@aliyun.com"
-# receiver_email = "18601206439@163.com"
+sender_password = None # replace w/ sender password
+receiver_email = None # replace w/ receiver email
+
 print("About to send email to " + receiver_email + "...")
 
-subject = '李同伟转让会籍申请'
+subject = '转让会籍申请'
 message = '黑骑士球员俱乐部：\
         我申请转让会籍，申请表及相关资料详见附件。\
-        李同伟\
         2023年9月3日'
-# subject = "Test Msg"
-# message = "Hello!"
 
 target_time_stamp = 1693756789
 current_timestamp = int(time.time())
